@@ -1,8 +1,9 @@
 #!/bin/bash
 
-to=~/Coding/dotfiles
+to=~/dev/dotfiles
 
 cp ~/.i3blocks.conf $to
 cp ~/.config/i3/config $to
 cp ~/.vimrc $to
 cp ~/.config/compton.conf $to
+cp ~/.bashrc $to
