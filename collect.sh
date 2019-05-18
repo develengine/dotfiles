@@ -7,3 +7,4 @@ cp ~/.config/i3/config $to
 cp ~/.vimrc $to
 cp ~/.config/compton.conf $to
 cp ~/.bashrc $to
+cp ~/apps/st/config.h $to

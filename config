@@ -42,12 +42,16 @@ bindsym $mod+d exec dmenu_run -l 20
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# 300A24
+set $mcol #1b1f38
+set $bcol #fbd2b2
+
 # Border settings
 # class                 border  backgr. text    indicator child_border
-client.focused          #CECECE #CECECE #300A24 #CECECE   #300A24
-client.focused_inactive #300A24 #300A24 #CECECE #300A24   #300A24
-client.unfocused        #300A24 #300A24 #CECECE #300A24   #300A24
-client.urgent           #FE2222 #FE2222 #ffffff #300A24   #300A24
+client.focused          $bcol   $bcol   $mcol   $bcol     $mcol
+client.focused_inactive $mcol   $mcol   $bcol   $mcol     $mcol
+client.unfocused        $mcol   $mcol   $bcol   $mcol     $mcol
+client.urgent           #FE2222 #FE2222 #ffffff $mcol     $mcol
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 # change focus
@@ -184,13 +188,13 @@ bar {
 	status_command i3blocks
 
         colors {
-                separator #444444
-		background #300A24
-		statusline #B1B1B1
-		focused_workspace #CECECE #300A24 #CECECE
-		active_workspace #300A24 #300A24 #CECECE
-		inactive_workspace #300A24 #300A24 #CECECE
-		urgent_workspace #eb709b #eb709b #CECECE
+                separator $bcol
+		background $mcol
+		statusline $bcol
+		focused_workspace $bcol $mcol $bcol
+		active_workspace $mcol $mcol $bcol
+		inactive_workspace $mcol $mcol $bcol
+		urgent_workspace #eb709b #eb709b $bcol
         }
         separator_symbol "|"
 }
