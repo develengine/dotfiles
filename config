@@ -201,7 +201,6 @@ bar {
 
 exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec_always feh --bg-fill /home/engine/Pictures/rails.jpg
-exec_always "setxkbmap -layout us,sk -variant ,qwerty"
-exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
+exec_always ./.scripts/langsupport.sh
 
 
