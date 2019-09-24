@@ -43,11 +43,8 @@ bindsym $mod+d exec dmenu_run -l 20
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # 300A24
-# set $mcol #1b1f38
-# set $bcol #fbd2b2
-set $mcol #98192a
-set $bcol #e6f2ec
-set $dcol #081420
+set $mcol #1b1f38
+set $bcol #fbd2b2
 
 # Border settings
 # class                 border  backgr. text    indicator child_border
@@ -194,16 +191,16 @@ bar {
                 separator $bcol
 		background $mcol
 		statusline $bcol
-		focused_workspace $mcol $mcol $bcol
+		focused_workspace $bcol $mcol $bcol
 		active_workspace $mcol $mcol $bcol
-		inactive_workspace $mcol $mcol $dcol
+		inactive_workspace $mcol $mcol $bcol
 		urgent_workspace #eb709b #eb709b $bcol
         }
-        separator_symbol " "
+        separator_symbol "|"
 }
 
 exec --no-startup-id compton --config ~/.config/compton.conf -b
-exec_always feh --bg-fill /home/engine/Pictures/backmaybe.jpg
+exec_always feh --bg-fill /home/engine/Pictures/rails.jpg
 exec_always ~/.scripts/langsupport.sh
 
 bindsym $mod+Shift+m exec ~/.scripts/langset.py
