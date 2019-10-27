@@ -203,7 +203,7 @@ bar {
 }
 
 exec --no-startup-id compton --config ~/.config/compton.conf -b
-exec_always feh --bg-fill /home/engine/Pictures/backmaybe.jpg
+exec_always feh --bg-fill /home/engine/Pictures/forest.jpg
 exec_always ~/.scripts/langsupport.sh
 
 bindsym $mod+Shift+m exec ~/.scripts/langset.py
