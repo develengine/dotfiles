@@ -35,19 +35,19 @@ bindsym $mod+Return exec st -f 'Terminus-14'
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -l 20
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
 # 300A24
 # set $mcol #1b1f38
 # set $bcol #fbd2b2
 set $mcol #98192a
 set $bcol #e6f2ec
 set $dcol #081420
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec dmenu_run -l 20 -nb '#98192a' -sf '#e6f2ec' -sb '#0f1e1f' -nf '#081420'
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# installed.
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # Border settings
 # class                 border  backgr. text    indicator child_border
