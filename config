@@ -43,7 +43,7 @@ set $bcol #e6f2ec
 set $dcol #081420
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -l 20 -nb '#98192a' -sf '#e6f2ec' -sb '#0f1e1f' -nf '#081420'
+bindsym $mod+d exec dmenu_run -l 20 -nb '#98192a' -sf '#e6f2ec' -sb '#0f1e1f' -nf '#081420' -fn 'Terminus-14'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
