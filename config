@@ -30,7 +30,7 @@ font -xos4-Terminus-Medium-R-Normal--18-180-72-72-C-100-ISO10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st -f 'Terminus-14'
+bindsym $mod+Return exec st -f JetBrainsMono-11
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -203,6 +203,7 @@ bar {
 }
 
 exec --no-startup-id compton --config ~/.config/compton.conf -b
+exec --no-startup-id nm-applet --sm-disable
 exec xset fp+ /home/engine/fonts
 exec xset fp rehash
 exec_always feh --bg-fill /home/engine/Pictures/forest.jpg
