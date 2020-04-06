@@ -11,3 +11,4 @@ cp ~/apps/st/config.h $to/st
 cp ~/apps/dwm/config.h $to/dwm
 cp -r ~/.scripts $to
 cp ~/onstart.sh $to
+cp ~/dwmbar.py $to
